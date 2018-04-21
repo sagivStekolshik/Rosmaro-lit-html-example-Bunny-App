@@ -1,0 +1,38 @@
+{
+  "name": "rosmaro-lit-html-example-bunny-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-serve",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagivStekolshik/rosmaro-lit-html-example-bunny-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sagivStekolshik/rosmaro-lit-html-example-bunny-app/issues"
+  },
+  "homepage": "https://github.com/sagivStekolshik/rosmaro-lit-html-example-bunny-app#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.7",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-serve": "^0.2.0"
+  },
+  "dependencies": {
+    "lit-html": "^0.9.0",
+    "rosmaro": "^0.7.2",
+    "rosmaro-in-memory-storage": "^1.2.0",
+    "rosmaro-process-wide-lock": "^1.2.0"
+  }
+}
