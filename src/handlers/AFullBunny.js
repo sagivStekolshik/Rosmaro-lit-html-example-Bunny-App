@@ -4,7 +4,7 @@ export default {
 
   go: () => ({arrow: 'fed the bunny'}),
 
-  render: ({thisModel}) => html`<div>
+  view: ({thisModel}) => html`<div>
     <p>
       <span role="img" aria-label="A full bunny">🐰</span> 
       <span role="img" aria-label="Fireworks">🎆</span>

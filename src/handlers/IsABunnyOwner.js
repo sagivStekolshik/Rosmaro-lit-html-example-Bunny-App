@@ -6,7 +6,7 @@ export default {
 
   hasNoBunny: () => ({arrow: 'has no bunny'}),
 
-  render: ({thisModel}) => html`<div>
+  view: ({thisModel}) => html`<div>
     <p>Do you have a bunny?</p>
     <input
       type="button"

@@ -4,8 +4,8 @@ export default {
 
   repeat: () => ({arrow: 'repeated'}),
 
-  render: ({ctx, thisModel}) => html`<div>
-    <p>Thanks, {ctx.name}!</p>
+  view: ({ctx, thisModel}) => html`<div>
+    <p>Thanks, ${ctx.name}!</p>
     <input
       type="button"
       value="One more time!"

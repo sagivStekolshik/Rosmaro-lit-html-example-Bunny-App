@@ -9,14 +9,11 @@ export default {
       : 'ate a carrot';
     return {
       arrow,
-      ctx: {
-        ...ctx,
-        ateCarrots
-      }
+      ctx: Object.assign({},ctx,ateCarrots)
     };
   },
 
-  render: () => html`<p>
+  view: () => html`<p>
     <span role="img" aria-label="A bunny">🐰</span>
     <span role="img" aria-label="A carrot">🥕</span>
     This is an eating bunny.

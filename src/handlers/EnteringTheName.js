@@ -4,16 +4,16 @@ export default {
 
   typeName: ({ctx, name}) => ({
     arrow: 'typed',
-    ctx: {...ctx, name}
+    ctx: Object.assign({},ctx,name)
   }),
 
   finishEnteringTheName: () => ({arrow: 'done'}),
 
-  render: ({thisModel, ctx}) => html`<div>
+  view: ({thisModel, ctx}) => html`<div>
     <p>Please, enter your name.</p>
     <input
       type="text"
-      value={ctx.name}
+      value=${ctx.name}
       on-change=${ e => thisModel.typeName({name: e.target.value}) }
       />
     <input

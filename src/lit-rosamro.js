@@ -20,12 +20,12 @@ const litRosmaro = ({
     },
     {
       afterTransition: () => {
-        this.props.afterTransition();
+        afterTransition();
         refreshView();
       }
     }));
 
-  refreshView = () => Promise.resolve(model.view())
+  const refreshView = () => Promise.resolve(model.view())
     .then(view => render(view,document.body));
 
   refreshView()

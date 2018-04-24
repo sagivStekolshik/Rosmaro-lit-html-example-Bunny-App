@@ -4,7 +4,7 @@ export default {
 
   giveTheCarrot: () => ({arrow: 'gave the carrot'}),
 
-  render: ({thisModel}) => html`<div>
+  view: ({thisModel}) => html`<div>
     <p>You have a carrot. You can give it to your bunny.</p>
     <input
       type="button"
